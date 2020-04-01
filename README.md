@@ -1,3 +1,5 @@
+![Java CI with Maven](https://github.com/BonaBeavis/facete3/workflows/Java%20CI%20with%20Maven/badge.svg?branch=develop)
+
 # Facete3 Faceted Search Framework
 
 Facete is a faceted search framework for SPARQL-accessible data. We are working on aggregeations, so actually its becoming more of a SPARQL-based business intelligence system.
