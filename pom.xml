@@ -7,55 +7,7 @@
 	<groupId>org.hobbit</groupId>
 	<artifactId>facete3-parent</artifactId>
 	<version>1.2.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
-
-	<!-- facete3-bundle has a copy of the scm section due to github-release-plugin; 
-		see https://github.com/jutzig/github-release-plugin/issues/14 -->
-	<scm>
-		<url>https://github.com/hobbit-project/faceted-browsing-benchmark</url>
-		<connection>scm:git:git@github.com:hobbit-project/faceted-browsing-benchmark.git</connection>
-		<developerConnection>scm:git:git@github.com:hobbit-project/faceted-browsing-benchmark.git</developerConnection>
-		<tag>HEAD</tag>
-	</scm>
-
-	<properties>
-		<jena-sparql-api.version>3.14.0-2-SNAPSHOT</jena-sparql-api.version>
-		<!-- <jackson.version>2.8.8</jackson.version> -->
-		<jackson.version>2.10.3</jackson.version>
-
-		<!-- <docker.mainClass>org.hobbit.sdk.main.MainDockerServiceLauncher</docker.mainClass> -->
-
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<!-- <maven.compiler.source>9</maven.compiler.source> -->
-		<!-- <maven.compiler.target>9</maven.compiler.target> -->
-		<!-- <maven.compiler.release>9</maven.compiler.release> -->
-
-		<!-- <task-generator.docker.repository>git.project-hobbit.eu:4567/gkatsibras/facetedbenchmarkcontroller</benchmark-controller.docker.repository> -->
-		<!-- <benchmark-controller.docker.repository>git.project-hobbit.eu:4567/gkatsibras/facetedbenchmarkcontroller</benchmark-controller.docker.repository> -->
-		<!-- <benchmark-controller.docker.repository>git.project-hobbit.eu:4567/gkatsibras/facetedbenchmarkcontroller</benchmark-controller.docker.repository> -->
-	</properties>
-
-	<modules>
-		<module>facete3-resources-test-config</module>
-		<module>facete3-core-parent</module>
-		<module>facete3-fsbg-parent</module>
-
-		<module>facete3-bundle</module>
-		<module>facete3-dummy</module>
-	</modules>
-
-
-	<dependencyManagement>
-		<dependencies>
-			<!-- java 9+ for server-standalone -->
-			<dependency>
-				<groupId>javax.xml.bind</groupId>
-				<artifactId>jaxb-api</artifactId>
-				<version>2.3.0</version>
-			</dependency>
-			<dependency>
+	<packaging>pom
 				<groupId>com.sun.xml.bind</groupId>
 				<artifactId>jaxb-impl</artifactId>
 				<version>2.3.0</version>
@@ -69,9 +21,7 @@
 				<groupId>javax.activation</groupId>
 				<artifactId>activation</artifactId>
 				<version>1.1.1</version>
-			</dependency>
-
-			<dependency>
+			</depend
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
 				<version>${jackson.version}</version>
